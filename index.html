@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containern">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('nezuko2.jpg')"><img src="nezuko2.jpg"></li>
+            <li onmouseover="changeImageSrc('zenitsu2.jpg')"><img src="zenitsu2.jpg"></li>
+            <li onmouseover="changeImageSrc('inosuke2.jpg')"><img src="inosuke2.jpg"></li>
+        </ul>
+        <div class="imgBxn">
+            <h2>His allies</h2>
+            <img src="nezuko2.jpg" class="nez">
+        </div>
+    </div>
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.nez').src = anything;
+        }
+    </script>
+    
+
+</body>
+</html>
